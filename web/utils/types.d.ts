@@ -136,3 +136,28 @@ export type AssetsType = [
     storeUniqueId: string;
   }
 ];
+
+export type AdminSettingsType = {
+  key: string;
+  value: string | null;
+};
+
+export type AdminSettingsObjectType = {
+  usd: string;
+  profit: string;
+  cryptoCommisition: string;
+  addDealCommisition: string;
+  botCommisition: string;
+  commisitionLevel1: string;
+  commisitionLevel2: string;
+  commisitionLevel3: string;
+  commisitionLevel4: string;
+  commisitionLevel5: string;
+  minimumAsset: string;
+  minimumWithdrawal: string;
+  maximumWithdrawalLevel1: string;
+  maximumWithdrawalLevel2: string;
+  maximumWithdrawalLevel3: string;
+  maximumWithdrawalLevel4: string;
+  maximumWithdrawalLevel5: string;
+};

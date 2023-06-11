@@ -1,0 +1,8 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.links{
+    @apply text-slate-600 font-semibold hover:text-sky-500
+}
+.swiper-wrapper{height:40px !important;}
