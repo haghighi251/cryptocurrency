@@ -10,6 +10,8 @@ const initialState: Iuser = {
     isStarterUser: undefined,
     isSubAdmin: undefined,
     isSiteSupporter: undefined,
+    nickname: null,
+    picture: null,
   },
   isLoggedIn: false,
 };
@@ -32,6 +34,8 @@ export const userReducer = createSlice({
           isStarterUser: undefined,
           isSubAdmin: undefined,
           isSiteSupporter: undefined,
+          nickname: null,
+          picture: null,
         },
         isLoggedIn: false,
       });

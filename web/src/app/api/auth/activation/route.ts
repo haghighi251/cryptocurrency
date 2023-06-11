@@ -52,6 +52,8 @@ export async function POST(request: NextRequest) {
           isStarterUser: user.isStarterUser,
           isSubAdmin: user.isSubAdmin,
           isSiteSupporter: user.isSiteSupporter,
+          nickname: user.nickname,
+          picture: user.picture,
         },
       });
     } else {

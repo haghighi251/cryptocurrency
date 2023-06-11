@@ -1,4 +1,5 @@
 import { Document } from "mongoose";
+import { MouseEvent, ChangeEvent } from "react";
 
 export interface Iuser {
   user: {
@@ -7,6 +8,8 @@ export interface Iuser {
     isStarterUser: boolean | undefined;
     isSubAdmin: boolean | undefined;
     isSiteSupporter: boolean | undefined;
+    nickname: string | null;
+    picture: string | null;
   };
   isLoggedIn: boolean;
 }
@@ -65,7 +68,7 @@ export interface IAssetsSchema extends Document {
   vwap24Hr: string;
   storeUniqueId: string;
   timestamps?: unknown;
-  _doc: any;
+  _doc?: any;
 }
 
 export interface INewsSchema extends Document {
@@ -93,6 +96,13 @@ export interface IPackagesSchema extends Document {
   _doc: any;
 }
 
+export interface ISettingsSchema extends Document {
+  key: string;
+  value: string | null;
+  timestamps?: unknown;
+  _doc: any;
+}
+
 // LoginForm props
 export interface LoginFormProps {
   mobile: string;
@@ -109,3 +119,20 @@ export interface ActivationFormProps {
   error: string | null;
   isLoading: boolean;
 }
+
+export type AssetsType = [
+  {
+    id: string;
+    rank: string;
+    symbol: string;
+    name: string;
+    supply: string;
+    maxSupply: string;
+    marketCapUsd: string;
+    volumeUsd24Hr: string;
+    priceUsd: string;
+    changePercent24Hr: string;
+    vwap24Hr: string;
+    storeUniqueId: string;
+  }
+];

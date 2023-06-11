@@ -1,7 +1,8 @@
 "use client";
 import { Skeleton } from "@mui/material";
+import React from "react";
 
-const NewProvinceLoading = () => {
+const AssetsLoading = () => {
   return (
     <div className="flex flex-col mx-auto max-w-screen-sm justify-center items-center mt-3 md:mt-5 ">
       <Skeleton
@@ -18,4 +19,4 @@ const NewProvinceLoading = () => {
   );
 };
 
-export default NewProvinceLoading;
+export default AssetsLoading;

@@ -7,14 +7,11 @@ import { actionLogout, user } from "@/services/Redux/userReducer";
 import { AppDispatch } from "@/services/Redux/store";
 import Image from "next/image";
 import logo from "../../public/assets/images/logo.png";
+import StarterUserItems from "./StarterUserItems";
 
 const TopMenu = () => {
   const currentUser: Iuser = useSelector(user);
   const dispatch: AppDispatch = useDispatch();
-
-  const logOut = async () => {
-    await dispatch(actionLogout());
-  };
 
   return (
     <div className="w-full border-y border-slate-400/25 ">
@@ -28,7 +25,7 @@ const TopMenu = () => {
               object-fill="cover"
               width={250}
               alt="Logo"
-              className="px-2"
+              className="p-2"
             />
           </Link>
         </div>
@@ -79,7 +76,11 @@ const TopMenu = () => {
               </Link>
             </>
           )}
-          {currentUser.isLoggedIn === true && <>You are logedin</>}
+          {currentUser.isLoggedIn === true && (
+            <>
+              <StarterUserItems />
+            </>
+          )}
         </div>
       </div>
     </div>

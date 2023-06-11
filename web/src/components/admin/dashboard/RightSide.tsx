@@ -2,6 +2,7 @@
 import React from "react";
 import Dashboard from "@mui/icons-material/Dashboard";
 import School from "@mui/icons-material/School";
+import Settings from "@mui/icons-material/Settings";
 import LocalTaxi from "@mui/icons-material/LocalTaxi";
 import FamilyRestroom from "@mui/icons-material/FamilyRestroom";
 import Link from "next/link";
@@ -9,7 +10,7 @@ import { AccountBalance, Newspaper } from "@mui/icons-material";
 
 const RightSide = () => {
   return (
-    <div className="basis-1/4 bg-white w-full h-screen pr-3">
+    <div className="basis-1/4 bg-white w-full pr-3">
       <div className="rightMenuLink ">
         <div className="rightMenuLinkInternally">
           <Dashboard sx={{ my: 0.3 }} />
@@ -18,8 +19,8 @@ const RightSide = () => {
       </div>
       <div className="rightMenuLink ">
         <div className="rightMenuLinkInternally">
-          <School sx={{ my: 0.3 }} />
-          <Link href={`/admin/dashboard/provinces`}>استان ها</Link>
+          <Settings sx={{ my: 0.3 }} />
+          <Link href={`/admin/dashboard/settings`}>تنظیمات</Link>
         </div>
       </div>
       <div className="rightMenuLink ">

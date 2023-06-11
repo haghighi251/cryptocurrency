@@ -11,7 +11,6 @@ export async function verifyAdminToken(request: NextRequest) {
     if (err) {
       return false;
     }
-    // req.user_info = user;
     return true;
   });
 }

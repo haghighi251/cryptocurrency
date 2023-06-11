@@ -1,7 +1,7 @@
 import Head from "@/components/head";
-import { PersistGate } from "redux-persist/integration/react";
-import { Provider } from "react-redux";
-import store, { persistor } from "@/services/Redux/store";
+//import { PersistGate } from "redux-persist/integration/react";
+//import { Provider } from "react-redux";
+//import store, { persistor } from "@/services/Redux/store";
 import "../public/assets/css/index.css";
 import TopMenu from "@/components/TopNav/TopMenu";
 import { Providers } from "@/services/Redux/provider";

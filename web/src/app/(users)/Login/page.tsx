@@ -121,6 +121,8 @@ export default function Login() {
                 isStarterUser: res.data.isStarterUser,
                 isSubAdmin: res.data.isSubAdmin,
                 isSiteSupporter: res.data.isSiteSupporter,
+                nickname: res.data.nickname,
+                picture: res.data.picture,
               },
               isLoggedIn: true,
             })
